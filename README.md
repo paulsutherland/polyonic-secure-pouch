@@ -22,6 +22,7 @@ If you replicate to another database, it will decrypt before sending it to the e
 If you need to decrypt manually see [danang-id/simple-crypto-js]
 
 This only encrypts the contents of documents, **not the `_id`, `_rev` or `_deleted`**.
+
 I based this plugin on [lil5/simple-cryptor-pouch], but tailored it to work with the [Polyonic] app seed project.
 
 This project should also work on the following:
