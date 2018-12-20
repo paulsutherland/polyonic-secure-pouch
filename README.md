@@ -101,4 +101,7 @@ PouchDB.sync(local, remote, {live: true, retry: true})
 .on('denied', err => console.error(Error({output: err, message: 'denied'})))
 
 ```
-file: [examples/sync-encrypted-remote.js]
+file: [examples/sync-encrypted-remote.js](https://github.com/paulsutherland/polyonic-secure-pouch/blob/master/examples/sync-encrypted-remote.js)
+
+[danang-id/simple-crypto-js]: https://github.com/danang-id/simple-crypto-js
+[brix/crypto-js]: https://github.com/brix/crypto-js
