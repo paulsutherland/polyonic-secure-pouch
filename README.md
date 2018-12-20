@@ -103,5 +103,6 @@ PouchDB.sync(local, remote, {live: true, retry: true})
 ```
 file: [examples/sync-encrypted-remote.js](https://github.com/paulsutherland/polyonic-secure-pouch/blob/master/examples/sync-encrypted-remote.js)
 
+[paulsutherland/Polyonic]: https://github.com/paulsutherland/Polyonic
 [danang-id/simple-crypto-js]: https://github.com/danang-id/simple-crypto-js
 [brix/crypto-js]: https://github.com/brix/crypto-js
