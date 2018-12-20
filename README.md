@@ -7,7 +7,7 @@
 
 # polyonic-secure-pouch
 
-PouchDB AES encryption for Polyonic [paulsutherland/Polyonic] and browsers using [danang-id/simple-crypto-js] which uses [brix/crypto-js]
+PouchDB AES encryption for Polyonic [Polyonic] and browsers using [danang-id/simple-crypto-js] which uses [brix/crypto-js]
 
 ```js
 const db = new PouchDB('app.db');
@@ -103,6 +103,6 @@ PouchDB.sync(local, remote, {live: true, retry: true})
 ```
 file: [examples/sync-encrypted-remote.js](https://github.com/paulsutherland/polyonic-secure-pouch/blob/master/examples/sync-encrypted-remote.js)
 
-[paulsutherland/Polyonic]: https://github.com/paulsutherland/Polyonic
+[Polyonic]: https://github.com/paulsutherland/Polyonic
 [danang-id/simple-crypto-js]: https://github.com/danang-id/simple-crypto-js
 [brix/crypto-js]: https://github.com/brix/crypto-js
