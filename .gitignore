@@ -62,3 +62,6 @@ typings/
 
 # PouchDB Test Files
 test/.pouchdb
+
+# Apple Directory marker
+.DS_Store
