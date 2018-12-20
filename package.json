@@ -1,0 +1,34 @@
+{
+  "name": "polyonic-secure-pouch",
+  "version": "1.0.0",
+  "description": "PouchDB AES encryption using brix/crypto-js for polyonic and browsers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulsutherland/polyonic-secure-pouch.git"
+  },
+  "keywords": [
+    "Polyonic",
+    "PouchDB",
+    "Ionic",
+    "CryptoJS",
+    "CouchDB",
+    "aes",
+    "encrypt",
+    "plugin"
+  ],
+  "author": "Paul Sutherland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulsutherland/polyonic-secure-pouch/issues"
+  },
+  "homepage": "https://github.com/paulsutherland/polyonic-secure-pouch#readme",
+  "dependencies": {
+    "lodash.reduce": "^4.6.0",
+    "simple-crypto-js": "^2.0.2",
+    "transform-pouch": "^1.1.4"
+  }
+}
