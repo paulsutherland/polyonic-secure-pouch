@@ -47,7 +47,7 @@ test('empty db put, get', t => {
 
   const exampleDoc = {
     _id: 'firstput',
-    name: 'foo',
+    name: 'foo'
   }
 
   return db.put(exampleDoc) // create exampleDoc in db
@@ -59,7 +59,7 @@ test('empty db put, get', t => {
           // equal everything except _rev
           t.deepEqual({
             _id: doc._id,
-            name: doc.name,
+            name: doc.name
           }, exampleDoc)
         })
         .catch(err => t.fail(err))
@@ -77,7 +77,7 @@ test('change password', t => {
 
   const exampleDoc = {
     _id: 'firstput',
-    name: 'fee',
+    name: 'fee'
   }
 
   // put exampleDoc in db original
@@ -90,17 +90,17 @@ test('change password', t => {
         .then(doc => {
           t.deepEqual({
             _id: doc._id,
-            name: doc.name,
+            name: doc.name
           }, exampleDoc)
 
           // copy original to changed
           return new Promise((resolve, reject) => {
             PouchDB
               .replicate(originalDB, changedDB,
-                {live: false, retry: false})
-              .on('complete', info => resolve({output: info, message: 'complete'}))
-              .on('error', err => reject(Error({output: err, message: 'error'})))
-              .on('denied', err => reject(Error({output: err, message: 'denied'})))
+                { live: false, retry: false })
+              .on('complete', info => resolve({ output: info, message: 'complete' }))
+              .on('error', err => reject(Error({ output: err, message: 'error' })))
+              .on('denied', err => reject(Error({ output: err, message: 'denied' })))
           })
             .then(response => {
               t.log(JSON.stringify(response.output))
@@ -112,7 +112,7 @@ test('change password', t => {
                 .then(doc => {
                   t.deepEqual({
                     _id: doc._id,
-                    name: doc.name,
+                    name: doc.name
                   }, exampleDoc)
                 })
                 .catch(err => t.fail(err))
