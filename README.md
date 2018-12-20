@@ -1,6 +1,6 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![devDependencies Status](https://david-dm.org/paulsutherland/polyonic-secure-pouch/dev-status.svg)](https://david-dm.org/paulsutherland/polyonic-secure-pouch?type=dev)
-[![GitHub version](https://badge.fury.io/gh/paulsutherland/polyonic-secure-pouch.svg)](https://badge.fury.io/gh/paulsutherland%2Fpolyonic-secure-pouch)
+[![GitHub version](https://badge.fury.io/gh/paulsutherland%2Fpolyonic-secure-pouch.svg)](https://badge.fury.io/gh/paulsutherland%2Fpolyonic-secure-pouch)
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
