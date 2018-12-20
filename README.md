@@ -1,13 +1,13 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![devDependencies Status](https://david-dm.org/paulsutherland/polyonic-secure-pouch/dev-status.svg)](https://david-dm.org/paulsutherland/polyonic-secure-pouch?type=dev)
-[![GitHub version](https://badge.fury.io/gh/paulsutherland%2Fpolyonic-secure-pouch.svg)](https://badge.fury.io/gh/paulsutherland%2Fpolyonic-secure-pouch)
+[![GitHub version](https://badge.fury.io/gh/paulsutherland/polyonic-secure-pouch.svg)](https://badge.fury.io/gh/paulsutherland%2Fpolyonic-secure-pouch)
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
 # polyonic-secure-pouch
 
-PouchDB AES encryption for Polyonic [Polyonic] and browsers using [danang-id/simple-crypto-js] which uses [brix/crypto-js]
+PouchDB plugin for AES encryption of data in [Polyonic] and browsers using [danang-id/simple-crypto-js] which uses [brix/crypto-js]
 
 ```js
 const db = new PouchDB('app.db');
@@ -23,9 +23,10 @@ If you replicate to another database, it will decrypt before sending it to the e
 If you need to decrypt manually see [danang-id/simple-crypto-js]
 
 This only encrypts the contents of documents, **not the `_id`, `_rev` or `_deleted`**.
-I based this plugin on [lil5/simple-cryptor-pouch] but tailored it to work with Polyonic seed project.
-This project should work on the following:
-* web (with a Babel.js bundler)
+I based this plugin on [lil5/simple-cryptor-pouch], but tailored it to work with the [Polyonic] app seed project.
+
+This project should also work on the following:
+* web (with a babel.js bundler)
 * electron
 * nodejs
 * react native
@@ -75,7 +76,7 @@ PouchDB.replicate(oldDB, newDB, {live: true, retry: true})
 
 ```
 
-file: [examples/change-password.js](https://github.com/lil5/simple-cryptor-pouch/blob/master/examples/change-password.js)
+file: [examples/change-password.js](https://github.com/paulsutherland/polyonic-secure-pouch/blob/master/examples/change-password.js)
 
 ### Sync encrypted remote
 
@@ -104,5 +105,6 @@ PouchDB.sync(local, remote, {live: true, retry: true})
 file: [examples/sync-encrypted-remote.js](https://github.com/paulsutherland/polyonic-secure-pouch/blob/master/examples/sync-encrypted-remote.js)
 
 [Polyonic]: https://github.com/paulsutherland/Polyonic
+[lil5/simple-cryptor-pouch]: https://github.com/lil5/simple-cryptor-pouch
 [danang-id/simple-crypto-js]: https://github.com/danang-id/simple-crypto-js
 [brix/crypto-js]: https://github.com/brix/crypto-js
