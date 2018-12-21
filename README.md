@@ -4,7 +4,7 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
-# polyonic-secure-pouch
+# Secure Pouch
 
 PouchDB plugin for AES encryption of data in [Polyonic] and browsers using [danang-id/simple-crypto-js] which uses [brix/crypto-js]
 
@@ -56,8 +56,8 @@ String or Array of Strings of properties that will not be encrypted.
 
 ```js
 const PouchDB = require('pouchdb')
-const encrypt = require('polyonic-secure-pouch')
-PouchDB.plugin(encrypt)
+const SecurePouch = require('polyonic-secure-pouch')
+PouchDB.plugin(SecurePouch)
 
 const oldDBpath = './password-old.db'
 const newDBpath = './password-new.db'
@@ -82,7 +82,7 @@ file: [examples/change-password.js](https://github.com/paulsutherland/polyonic-s
 ```js
 const PouchDB = require('pouchdb')
 const encrypt = require('polyonic-secure-pouch')
-PouchDB.plugin(encrypt)
+PouchDB.plugin(SecurePouch)
 
 const localPath = './sync-remote.db'
 const remoteURL = 'http://127.0.0.1:5984'

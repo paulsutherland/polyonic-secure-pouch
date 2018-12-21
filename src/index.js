@@ -1,7 +1,7 @@
 const SimpleCryptoJS = require('simple-crypto-js').default
 const transform = require('transform-pouch').transform
 
-const crypto = require('./crypto')
+const secure = require('./secure')
 
 /**
 * Pouch plugin function to encrypt and decrypt a doc entering and exiting the Database
@@ -19,10 +19,10 @@ function encrypt (password, options = {}) {
 
   db.transform({
     incoming: function (doc) {
-      return crypto.encrypt(simpleCryptoJS, doc, options.ignore)
+      return secure.encrypt(simpleCryptoJS, doc, options.ignore)
     },
     outgoing: function (doc) {
-      return crypto.decrypt(simpleCryptoJS, doc, options.ignore)
+      return secure.decrypt(simpleCryptoJS, doc, options.ignore)
     }
   })
 }

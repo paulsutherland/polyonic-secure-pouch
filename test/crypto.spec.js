@@ -1,10 +1,10 @@
 const SimpleCryptoJS = require('simple-crypto-js').default
 const test = require('ava')
-const crypto = require('../crypto')
+const secure = require('../src/secure')
 
 const ignore = ['_id', '_rev', '_deleted', '--encrypted--']
 
-test('crypto', t => {
+test('secure', t => {
   const password = 'password'
   const inCrypto = new SimpleCryptoJS(password)
   const outCrypto = new SimpleCryptoJS(password)
@@ -21,9 +21,9 @@ test('crypto', t => {
     five: [['one'], ['two'], ['three', 'four']]
   }
 
-  const encrypted = crypto.encrypt(inCrypto, doc, ignore)
+  const encrypted = secure.encrypt(inCrypto, doc, ignore)
   t.log(JSON.stringify(encrypted))
-  const decrypted = crypto.decrypt(outCrypto, encrypted, ignore)
+  const decrypted = secure.decrypt(outCrypto, encrypted, ignore)
 
-  t.deepEqual(doc, decrypted, 'if cryptor works for Array<object>')
+  t.deepEqual(doc, decrypted, 'if secure pouch works for Array<object>')
 })

@@ -1,5 +1,5 @@
 const test = require('ava')
-const plugins = require('../index')
+const plugins = require('../src/index')
 const PouchWebSql = require('pouchdb-adapter-node-websql')
 const PouchDB = require('pouchdb')
 const path = require('path')
