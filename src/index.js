@@ -13,7 +13,7 @@ function encrypt (password, options = {}) {
   const db = this
 
   // set default ignore
-  options.ignore = ['_id', '_rev', '_deleted', '--encrypted--'].concat(options.ignore)
+  options.ignore = ['_id', '_rev', '_deleted', '--encrypted--', '_conflicts'].concat(options.ignore)
 
   const simpleCryptoJS = new SimpleCryptoJS(password)
 
