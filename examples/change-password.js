@@ -1,12 +1,12 @@
 const path = require('path')
 const PouchDB = require('pouchdb')
 const PouchWebSql = require('pouchdb-adapter-node-websql')
-const encrypt = require('./index')
+const SecurePouch = require('polyonic-secure-pouch')
 
 // use sqlite for simplicity
 const dbPath = path.join(__dirname, '/.pouchdb')
 PouchDB.plugin(PouchWebSql)
-PouchDB.plugin(encrypt)
+PouchDB.plugin(SecurePouch)
 
 const oldDBpath = dbPath + '/password-old.db'
 const newDBpath = dbPath + '/password-new.db'
