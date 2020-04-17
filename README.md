@@ -82,7 +82,7 @@ file: [examples/change-password.js](https://github.com/paulsutherland/polyonic-s
 
 ```js
 const PouchDB = require('pouchdb')
-const encrypt = require('polyonic-secure-pouch')
+const SecurePouch = require('polyonic-secure-pouch')
 PouchDB.plugin(SecurePouch)
 
 const localPath = './sync-remote.db'
