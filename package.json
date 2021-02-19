@@ -31,7 +31,7 @@
   "homepage": "https://github.com/paulsutherland/polyonic-secure-pouch#readme",
   "dependencies": {
     "lodash.reduce": "^4.6.0",
-    "simple-crypto-js": "^3.0.0",
+    "simple-crypto-js": "2.5.0",
     "transform-pouch": "^1.1.5"
   },
   "devDependencies": {
