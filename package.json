@@ -1,6 +1,6 @@
 {
   "name": "polyonic-secure-pouch",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "PouchDB AES encryption using brix/crypto-js for polyonic and browsers",
   "main": "src/index.js",
   "scripts": {
